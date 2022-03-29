@@ -1,0 +1,144 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+	padding: 0px;
+	margin:0px;
+	box-sizing: border-box;
+    font-family: "Poppins" , sans-serif;
+}
+.inicio_cont{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.informacion{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    flex-direction: column;
+    padding: 40px;
+    border:none;
+}
+.informacion form{
+    width:80%;
+}
+
+.boton{
+    background: rgb(214, 214, 214);
+    color:white;
+    border:none;
+    font-size:15px;
+    width:40%;
+}
+.boton:hover{
+    background: black;
+}
+
+.informacion .inicio_cont{
+    margin:25px;
+}
+.informacion input{
+    text-align: center;
+    height: 40px;
+    border-radius: 30px;
+    width: 90%;
+}
+.informacion button{
+    border-radius: 30px;
+    border:none;
+    color:white;
+    font-size: 20px;
+    font: bold;
+    background: rgb(1,255,201);
+    background: linear-gradient(90deg, rgba(1,255,201,1) 0%, rgba(205,255,163,1) 97%);
+    height: 50px;
+    width: 60%;
+    margin:10px;
+}
+.footer{
+    text-align: center;
+}
+.imagen{
+    display: flex;
+    position: relative;
+    width: 50%;
+}
+.imagen img{
+    filter: brightness(50%);
+    height: 100%;
+    width: 100%;
+}
+.icono{
+    position: absolute;
+    width:100%;
+}
+.icono img{
+    margin-right: 100px;
+    top:50%;
+    width:35%;
+    float:right;
+}
+@media (max-width: 800px) {
+    .inicio_cont{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        right: 50%;
+        width: 100%;
+    }
+    .informacion .inicio_cont{
+        margin:5px;
+        padding: 0;
+        width:100%;
+    }
+    .informacion{
+        width: 100%;
+        
+    }
+    .informacion button{
+        height: 35px;
+        font-size: 13px;
+    }
+    .imagen{
+        display: none;
+    }
+    .imagen img{
+        width: 0;
+        display: none;
+    }
+    .icono img{
+        width: 0;
+        display: none;
+    }
+    .footer{
+        font-size: 12px;
+    }
+}
+@media (max-width: 400px) {
+    .body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+     
+    }
+    .informacion{
+        font-size:13px;
+        padding:20px;
+        vertical-align: middle;
+        
+    }
+    .inicio_cont{
+       margin-top:70px;
+        font-size:16px;
+        
+    }
+.informacion form{
+    width:100%;
+}
+    .informacion input{
+        height: 25px;
+        font-size:12px;
+    }
+}

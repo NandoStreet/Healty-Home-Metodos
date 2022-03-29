@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculadoras</title>
+
+    <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="css/principal.css">
+    <link rel="stylesheet" href="css/recomendaciones.css">
+    <link rel= "stylesheet" href="css/estilos_calc.css">
+
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+</head>
+<body>
+
+    <!--Header - menu-->
+    <header>
+
+        <div class="header-content">
+
+            <div class="logo">
+                <img src="img/iconoblanco.png">
+            </div>
+
+            <div class="menu" id="show-menu">
+
+                <nav>
+                    <ul>
+                        <li class="menu-selected"><a href="index.html"></i>Inicio</a></li>
+                        <li class="menu-selected"><a href="index.html"></i>Sistema de salud</a></li>
+                        <li class="menu-selected"><a href="recomendaciones.html"></i>Recomendaciones</a></li>
+                        <li class="menu-selected"><a href="calculadoras.html"></i>Calculadoras</a></li>
+                        <li class="menu-selected"><a href="tipodecuerpo.html"></i>Tipo de cuerpo</a></li>
+                    </ul>
+                </nav>
+
+            </div>
+
+        </div>
+
+        <div id="icon-menu">
+            <i class="fas fa-bars"></i>
+        </div>
+
+    </header>
+
+    <!--Portada-->
+
+    <div class="container-all" id="move-content">
+        <div class="contenedor">
+            
+            <section class="Calculadoras">
+                <h3 class="titulo"><b>CALCULADORAS BÁSICAS</b> </h3>
+                <br>
+                <p>¿Te gustaría saber tu peso ideal o las calorías diarias 
+                    recomendadas según tu ritmo de vida? Con las calculadoras 
+                    de Healtly Home podrás desde consultar tu Índice de Masa 
+                    Corporal hasta planificar tus entrenamientos en función de
+                     tu tipo de cuerpo ¿A qué esperas para empezar?</p>
+                     <br>
+            </section>
+        
+        
+        
+            
+            <div class="calculadoras" OnClick="location.href='cal_imc.html'">
+                <div class="contenedor-calc">
+                    <img src="img/imc.png"width="100" height="100" style= 'background-color: white' >
+                     <aside>                    
+                         <p class="subtitulo">ÍNDICE DE MASA CORPORAL</p>
+                       <p> El índice de masa corporal determina
+                        si la relación entre tu altura y tu peso
+                         está dentro de los índices recomendados
+                          por la OMS </p>
+                       </aside>
+                       <div class="reset"></div>
+                    </div>
+                </div>
+
+            <div class="calculadoras" OnClick="location.href='cal_calorias.html'">
+                <div class="contenedor-calc">
+                 <img src="img/calc_calorias.png" width="100" height="100" style= 'background-color: white'> 
+                           <aside>
+                            <p class="subtitulo">CALORÍAS DIARIAS RECOMENDADAS</p>
+                            <p>Conoce la cantidad de calorías que necesitas 
+                           diariamente teniendo en cuenta tus características
+                           personales, así como tu ritmo de vida. </p>
+                            </aside> 
+                           <div class="reset"></div>
+                </div>
+            </div>
+            </div>
+        
+    
+   
+    </div>
+ 
+    <script src="js/script.js"></script>
+</body>
+</html>

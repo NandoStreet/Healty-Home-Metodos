@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Recomendaciones-Sistema de Salud</title>
+
+    <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="css/principal.css">
+    <link rel="stylesheet" href="css/recomendaciones.css">
+
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+</head>
+<body>
+
+    <!--Header - menu-->
+    <header>
+
+        <div class="header-content">
+
+            <div class="logo">
+                <img src="img/iconoblanco.png">
+            </div>
+
+            <div class="menu" id="show-menu">
+
+                <nav>
+                    <ul>
+                        <li class="menu-selected"><a href="index.html"></i>Inicio</a></li>
+                        <li class="menu-selected"><a href="index.html"></i>Sistema de salud</a></li>
+                        <li class="menu-selected"><a href="recomendaciones.html"></i>Recomendaciones</a></li>
+                        <li class="menu-selected"><a href="calculadoras.html"></i>Calculadoras</a></li>
+                        <li class="menu-selected"><a href="tipodecuerpo.html"></i>Tipo de cuerpo</a></li>
+                    </ul>
+                </nav>
+
+            </div>
+
+        </div>
+
+        <div id="icon-menu">
+            <i class="fas fa-bars"></i>
+        </div>
+
+    </header>
+
+    <!--Portada-->
+
+    <div class="container-all" id="move-content">
+
+    
+    <div class="portada-container-cover">
+        <div class="portada_info">
+            <h1>Recomendaciones de ejercicios según tu tipo de cuerpo</h1>
+            <p>El ejercicio físico ayuda a perder peso y reduce el riesgo de desarrollar
+                algunas enfermedades.
+            </p>
+        </div>
+    </div>
+
+    <div class="container-post">
+        <input type="radio" id="TODOS" name="categories" value="TODOS" checked>
+        <input type="radio" id="ECTOMORFO" name="categories" value="ECTOMORFO">
+        <input type="radio" id="MESOMORFO" name="categories" value="MESOMORFO">
+        <input type="radio" id="ENDOMORFO" name="categories" value="ENDOMORFO">
+        <div class="container-category">
+            <label for="TODOS">TODOS</label>
+            <label for="ECTOMORFO">ECTOMORFO</label>
+            <label for="MESOMORFO">MESOMORFO</label>
+            <label for="ENDOMORFO">ENDOMORFO</label>
+        </div>
+        <div class="posts">
+            <div class="post" data-category="ECTOMORFO">
+                <div class="ctn-img">
+                    <img src="img/ejercicio1-ectomorfo.png" alt="">
+                </div>
+                <h2>Entrenamiento con fuerza</h2>
+                <span>Para tipo de cuerpo ectomorfo</span>
+                <ul class="ctn-tag">
+                    <li>ECTOMORFO</li>
+                </ul>
+                <a href="ectomorfo1.html"><button>Leer más</button></a>
+            </div>
+            <div class="post" data-category="ECTOMORFO">
+                <div class="ctn-img">
+                    <img src="img/ejercicio2-ectomorfo.png" alt=""></div>
+                <h2>Entrenamiento de cardio</h2>
+                <span>Para tipo de cuerpo ectomorfo</span>
+                <ul class="ctn-tag">
+                    <li>ECTOMORFO</li>
+                </ul>
+                <a href="ectomorfo1.html"><button>Leer más</button></a>
+            </div>
+            <div class="post" data-category="ECTOMORFO">
+                <div class="ctn-img">
+                    <img src="img/ejercicio3-ectomorfo.png" alt=""></div>
+                <h2>Tren superior</h2>
+                <span>Para tipo de cuerpo ectomorfo</span>
+                <ul class="ctn-tag">
+                    <li>ECTOMORFO</li>
+                </ul>
+                <a href="ectomorfo1.html"><button>Leer más</button></a>
+            </div>
+            <div class="post" data-category="ECTOMORFO">
+                <div class="ctn-img">
+                    <img src="img/ejercicio4-ectomorfo.png" alt=""></div>
+                <h2>Dominadas</h2>
+                <span>Para tipo de cuerpo ectomorfo</span>
+                <ul class="ctn-tag">
+                    <li>ECTOMORFO</li>
+                </ul>
+                <a href="ectomorfo1.html"><button>Leer más</button></a>
+            </div>
+            <div class="post" data-category="MESOMORFO">
+                <div class="ctn-img">
+                    <img src="img/ejercicio1-mesomorfo.png" alt=""></div>
+                <h2>Entrenamiento con fuerza</h2>
+                <span>Para tipo de cuerpo mesomorfo</span>
+                <ul class="ctn-tag">
+                    <li>MESOMORFO</li>
+                </ul>
+                <a href="ectomorfo1.html"><button>Leer más</button></a>
+            </div>
+            <div class="post" data-category="MESOMORFO">
+                <div class="ctn-img">
+                    <img src="img/ejercicio2-mesomorfo.png" alt=""></div>
+                <h2>Entrenamiento de cardio</h2>
+                <span>Para tipo de cuerpo mesomorfo</span>
+                <ul class="ctn-tag">
+                    <li>MESOMORFO</li>
+                </ul>
+                <a href="ectomorfo1.html"><button>Leer más</button></a>
+            </div>
+            <div class="post" data-category="ENDOMORFO">
+                <div class="ctn-img">
+                    <img src="img/ejercicio1-endomorfo.png" alt=""></div>
+                <h2>Ejercicios de baja intensidad</h2>
+                <span>Para tipo de cuerpo endomorfo</span>
+                <ul class="ctn-tag">
+                    <li>ENDOMORFO</li>
+                </ul>
+                <a href="ectomorfo1.html"><button>Leer más</button></a>
+            </div>
+        </div>
+    </div>
+    <div id="disqus_thread"></div>
+<script>
+    /**
+    *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+    *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+    /*
+    var disqus_config = function () {
+    this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+    this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+    */
+    (function() { // DON'T EDIT BELOW THIS LINE
+    var d = document, s = d.createElement('script');
+    s.src = 'https://healthyhome-2.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+        <footer>
+            <div class="contenedor-footer">
+                <div class="content-foo">  
+                    <h4>Celular</h4>
+                    <p> 992963122</p>
+                </div>
+                <div class="content-foo">
+                    <h4>Email</h4>
+                    <p>healthyHome@gmail.com</p>
+                </div>
+                <div class="content-foo">
+                    <h4>Facebook</h4>
+                    <p>@HealthyHomeSalud </p>
+                </div>
+            </div>   
+            <h2 class="footer-creador"> HealthyHome | Grupo 12-Calidad de Software </h2>
+        </footer>
+
+    
+
+</div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

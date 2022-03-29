@@ -1,0 +1,83 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+    padding: 0px;
+	margin:0px;
+	box-sizing: border-box;
+    font-family: "Poppins" , sans-serif;
+    background-color: white;
+}
+body{
+    margin-top:100px;
+}
+h1{
+    font-family: "Poppins" , sans-serif;
+	text-align:center;
+	color:rgb(163, 141, 141);
+	width:50%;
+	margin:auto;
+    font-size:20px;
+}
+
+
+table{
+    width:25%;
+    background-color:white;
+    border: 2px solid #606060;
+    border-radius: 20px;
+    padding:10px;
+    margin:auto;
+}
+#usuario,#contraseña{
+    font-family:'Courier New', Courier, monospace;
+    margin-bottom: 5px;
+    height:35px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font:bold;
+    border:none;
+    border-radius: 20px;
+    border: 2px solid #606060;
+}
+#PRODUCTO{
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    margin-left: 3px;
+    border:1px solid black;
+    border-radius: 5px;
+    height:30px;
+    width: 200px;
+}
+#enviar,#Borrar{
+    height:35px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font:bold;
+    border:none;
+    border-radius: 20px;
+    background: grey;
+    border:none;
+    color:white;
+}
+#enviar:hover{
+    background: rgb(1,255,201);
+    border:none;
+    color:white;
+}
+#Borrar:hover{
+    background: rgb(1,255,201);
+    border:none;
+    color:white;
+}
+
+    .izq{
+        text-align:right;
+    }
+    .der{
+        text-align:left;
+    }
+    td{
+        text-align:center;
+        padding:10 px;
+    }
+

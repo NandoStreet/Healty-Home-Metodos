@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Recomendaciones-Sistema de Salud</title>
+
+    <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="css/principal.css">
+    <link rel="stylesheet" href="css/recomendaciones.css">
+    <link rel="stylesheet" href="css/estilos_calorias.css">
+
+
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+</head>
+<body>
+
+    <!--Header - menu-->
+    <header>
+
+        <div class="header-content">
+
+            <div class="logo">
+                <img src="img/iconoblanco.png">
+            </div>
+
+            <div class="menu" id="show-menu">
+
+                <nav>
+                    <ul>
+                        <li class="menu-selected"><a href="index.html"></i>Inicio</a></li>
+                        <li class="menu-selected"><a href="index.html"></i>Sistema de salud</a></li>
+                        <li class="menu-selected"><a href="recomendaciones.html"></i>Recomendaciones</a></li>
+                        <li class="menu-selected"><a href="calculadoras.html"></i>Calculadoras</a></li>
+                        <li class="menu-selected"><a href="tipodecuerpo.html"></i>Tipo de cuerpo</a></li>
+                    </ul>
+                </nav>
+
+            </div>
+
+        </div>
+
+        <div id="icon-menu">
+            <i class="fas fa-bars"></i>
+        </div>
+
+    </header>
+
+    <!--Portada-->
+
+    <div class="container-all" id="move-content">
+
+        <div class="titulo">
+            <h3>Calculadora de Calorías Diarias</h3>
+            <p>Para un cálculo correcto necesitamos algo de informacion básica sobre ti</p>
+          </div>
+        <form class="form" id="form" onsubmit="return validateForm()">
+        <div class="filas">
+        <div class="Pasos">
+          <div class="punto"> 1 </div>
+          ¿Cuál es tu género?
+          <div class="cont_genero">
+            <div class="gn">
+              <img src="img/hombre.png">
+              <label class="container">
+              <input type="radio" name="radio" id="m"><p class="text">Masculino</p>
+              <span class="checkmark"></span>
+              </label>
+            </div>
+            <div class="gn">
+              <img src="img/mujer.png">
+              <label class="container">
+              <input type="radio" name="radio" id="f"><p class="text">Femenino</p>
+              <span class="checkmark"></span>
+              </label>
+            </div>
+         </div>
+        </div>
+        <div class="Pasos">
+        <div class="punto"> 2 </div>
+          <p>¿Cuántos años tienes?</p>
+          <div class="enlinea">
+          <input type="text" class="text-input" id="age" placeholder="21" autocomplete="off" required/><p class="text"> años</p>    
+          </div>
+        </div>
+      </div>
+      
+        <div class="filas">
+          <div class="Pasos altura">
+          <div class="punto"> 3 </div>
+         <p>¿Cuánto mides?</p> 
+         <div class="enlinea">
+          <input type="text" class="text-input" id="height" placeholder="160" autocomplete = "off" required><p class="text"> centímetros (cm)</p>
+         </div>
+        </div>
+        <div class="Pasos peso">
+          <div class="punto"> 4 </div>
+          <p>¿Cuánto pesas?</p>
+          <div class="enlinea">
+          <input type="text" class="text-input" id="weight" placeholder="60" autocomplete = "off" required><p class="text"> kilos (kg)</p>
+          </div>
+          </div>
+      </div>
+      
+      
+        <div class="superfila">
+          <div class="nivel-actividad">
+          <div class="punto-superfila"> 5 </div>
+          <p>¿Cómo de activo eres en el día?</p>
+          <div class="cont_actividad">
+            <div class=separador>
+            <div class="gn">
+              <img src="img/no-muy-activo.png">
+                <label class="container">
+                <input type="radio" name="activity" id="a1"><p class="text">Poco o ningun ejercicio</p>
+                <span class="checkmark"></span>
+                </label>
+            </div>
+            <div class="gn">
+              <img src="img/normal.png">
+                <label class="container">
+                <input type="radio" name="activity" id="a2"><p class="text">Ejercicio Ligero (1 a 3 días de la semana)</p>
+                <span class="checkmark"></span>
+                </label>
+            </div>
+            <div class="gn">
+              <img src="img/medianamente-activo.png">
+                <label class="container">
+                <input type="radio" name="activity" id="a3"><p class="text">Ejercicio Moderado (3 a 5 días de la semana)</p>
+                <span class="checkmark"></span>
+                </label>
+            </div>
+          </div>
+          <div class=separador>
+            <div class="gn">
+              <img src="img/activo.png">
+                <label class="container">
+                <input type="radio" name="activity" id="a4"><p class="text">Deportista (6 a 7 días de la semana)</p>
+                <span class="checkmark"></span>
+                </label>
+            </div>
+            <div class="gn">
+              <img src="img/muy-activo.png">
+                <label class="container">
+                <input type="radio" name="activity" id="a5"><p class="text">Atleta (Entrenamientos mañana y tarde)</p>
+                <span class="checkmark"></span>
+                </label>
+            </div>
+          </div>
+          </div>
+        
+      </div>
+      </div>
+      <br>
+      <br>
+      
+        <button type="button" id="submit">Calcular mis Calorías Diarias</button>
+        <button class="volver"><a href="cal_calorias.html" >Volver a intentar</a></button>
+        <br>
+        </form>
+      
+        <script src="calorias.js"></script>
+        <br><br><br><br><br><br><br><br>
+        
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="brmovil">
+         
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        </div>
+    
+
+</div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

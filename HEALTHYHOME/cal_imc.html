@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Recomendaciones-Sistema de Salud</title>
+
+    <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="css/principal.css">
+    <link rel="stylesheet" href="css/recomendaciones.css">
+    <link rel="stylesheet" href="css/estilos_imc.css">
+
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+</head>
+<body>
+
+    <!--Header - menu-->
+    <header>
+
+        <div class="header-content">
+
+            <div class="logo">
+                <img src="img/iconoblanco.png">
+            </div>
+
+            <div class="menu" id="show-menu">
+
+                <nav>
+                    <ul>
+                        <li class="menu-selected"><a href="index.html"></i>Inicio</a></li>
+                        <li class="menu-selected"><a href="index.html"></i>Sistema de salud</a></li>
+                        <li class="menu-selected"><a href="recomendaciones.html"></i>Recomendaciones</a></li>
+                        <li class="menu-selected"><a href="calculadoras.html"></i>Calculadoras</a></li>
+                        <li class="menu-selected"><a href="tipodecuerpo.html"></i>Tipo de cuerpo</a></li>
+                    </ul>
+                </nav>
+
+            </div>
+
+        </div>
+
+        <div id="icon-menu">
+            <i class="fas fa-bars"></i>
+        </div>
+
+    </header>
+
+    <!--Portada-->
+
+    <div class="container-all" id="move-content">
+
+        <h3><b>Calculadora de IMC: Índice de Masa Corporal</b></h3>
+        <h2>Para un cálculo correcto necesitamos algo de informacion básica sobre ti</h2>
+      <form class="form" id="form" onsubmit="return validateForm()">
+      <div class="filas">
+        <div class="bloquecitos">
+          <div class="punto">
+            1
+          </div>
+          ¿Cuál es tu género?
+          <div class="cont_genero">
+              <div class="gn">
+                <img src="img/hombre.png">
+                <label class="container">
+                <input type="radio" name="radio" id="m"><p class="text">Masculino</p>
+                <span class="checkmark"></span>
+                </label>
+              </div>
+              <div class="gn">
+                <img src="img/mujer.png">
+                <label class="container">
+                 <input type="radio" name="radio" id="f"><p class="text">Femenino</p>
+                <span class="checkmark"></span>
+                </label>
+              </div>
+          </div>
+        </div>
+        <div class="bloquecitos">
+          <div class="punto">
+            2
+          </div>
+          
+            <p>¿Cuántos años tienes?</p>
+          
+            <div class="enlinea">
+            <input type="text" class="text-input" id="age" placeholder="21" autocomplete="off" required/><p class="text"> años</p> 
+          </div>
+        </div>
+     
+      </div>
+      
+      <div class="filas">
+        <div class="bloquecitos altura">
+          <div class="punto">
+            3
+          </div>
+          <p>¿Cuánto mides?</p>
+          <div class="enlinea">
+          <input type="text" class="text-input" id="height" placeholder="160" autocomplete="off" required><p class="text"> centímetros (cm)</p>
+          </div>
+        </div>
+        <div class="bloquecitos peso"> 
+          <div class="punto">
+            4
+          </div>
+        ¿Cuánto pesas?
+        <div class="enlinea">
+        <input type="text" class="text-input" id="weight" placeholder="60" autocomplete="off" required><p class="text"> kilos (kg)</p>
+        </div>
+        </div>
+        </div>
+      <button type="button" id="submit">Calcular mi IMC</button>
+      <button class="volver"><a href="cal_imc.html" >Volver a intentar</a></button>
+      </form>
+      
+      <script src="funcionimc.js"></script>
+    <br>
+    <br>
+    <br>
+    
+    <br>
+    <br>
+    <br>
+    
+    
+
+</div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
